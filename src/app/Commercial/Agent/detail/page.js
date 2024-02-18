@@ -2,16 +2,11 @@
 
 import Link from "next/link";
 import Nav from "../nav/page";
-import { useSearchParams } from 'next/navigation'
-
 
 export default function Detail(){
-    const searchParams = useSearchParams()
-    const search = searchParams.get('query')
     return(    
         <>
         <Nav/>
-        <p>{search}</p>
             <div className="detail">
                 <div className="track">
                     <div className="trackele">
